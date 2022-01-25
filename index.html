@@ -10,14 +10,16 @@
   <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
       href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
   <header class="page-header">
+    <a class="navigation-logo" href="index.html">
     <img class="logo" src="" alt="Логотип Седона">
+    </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="main.html">Главная</a>
+          <a class="navigation-link-current" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
+          <a class="navigation-link" href="#">О Седоне</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -26,16 +28,14 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Поиск</span></a>
+            <span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visualy-hidden">
-              Избранное</span></a>
+            <span class="visualy-hidden"> Избранное</span></a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Хочу сюда</a>
+          <a class="navigation-link" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -116,7 +116,7 @@
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribtion-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
-          <input type="text" name="subscribe-to-mailing-list" placeholder="Ваш e-mail">
+          <input type="email" name="subscribe-to-mailing-list" placeholder="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
         </p>
       </form>
