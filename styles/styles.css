@@ -56,20 +56,10 @@ body {
     margin: 0 auto;
 }
 
-.navigation-logo {
-    display: block;
-    width: 150px;
-    margin:0 auto;
-}
 .navigation-list {
     margin: 0;
     padding: 0;
     width: 470px;
-}
-
-.navigation-user {
-    max-width: 280px;
-    margin-left: auto;
 }
 
 .navigation-link {
@@ -82,6 +72,19 @@ body {
     text-align: center;
     text-decoration: none;
 }
+
+.navigation-logo {
+    width: 140px;
+    margin-right: 50px;
+}
+
+
+.navigation-user {
+    max-width: 280px;
+    margin-left: 17px;
+}
+
+
 
 .button {
     font-family: inherit;
@@ -101,7 +104,9 @@ body {
 .main-index {
     background-color: #FFFFFF;
     color: #000000;
-    text-align: center;
+    background-image: url(../images/background/index-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     
 }
 
@@ -120,17 +125,13 @@ body {
 
 .welcome-logo {
     display: block;
-    flex-grow: 1;
     margin: 0 auto;
-    background-image: url(../images/background/index-background.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-
 }
+
 .first-sreen {
     display: flex;
     margin: 0 auto;
-    width: 1200px;
+    width: 1200p;
     background-color: #FFFFFF;
     color: #000000;
 }
@@ -349,6 +350,24 @@ subscribtion-form {
     text-decoration: none;
   }
 
+.catalog-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 160px;
+    padding-right: 65x;
+    margin: 0;
+}
+
+.catalog-down-column {
+    width: 1057px;
+}
+
 .catalog-filter-title {
     font-weight: 700;
     font-size: 20px;
@@ -361,6 +380,7 @@ subscribtion-form {
     font-size: 18px;
     line-height: 23px;
     color:  #FFFFFF;
+    width: 106px;
 }
 
 .product-card-link {
