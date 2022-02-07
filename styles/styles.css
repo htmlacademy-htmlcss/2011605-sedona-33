@@ -1,0 +1,473 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color:#f2f2f2;
+}
+
+.page-header {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.navigation {
+    display: flex;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 470px;
+}
+
+.navigation-link {
+    font-family: "PT Sans", sans-serif;
+    line-height: 26px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation-logo {
+    width: 140px;
+    margin-right: 50px;
+}
+
+
+.navigation-user {
+    max-width: 280px;
+    margin-left: 17px;
+}
+
+
+
+.button {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #68A2CA;
+    color: #FFFFFF;
+}
+
+.main-conteiner{
+    flex-grow: 1;
+}
+
+.main-index {
+    background-color: #FFFFFF;
+    color: #000000;
+    background-image: url(../images/background/index-background.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    
+}
+
+.main-inner {
+    background-image: url(../images/background/catalog-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.page-conteiner {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.welcome-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.first-sreen {
+    display: flex;
+    margin: 0 auto;
+    width: 1200p;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.tagline {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.reasons {
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+}
+
+.advanteges-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.advanteges-item {
+    width: 400px;
+    padding:0 75px;
+    
+}
+
+.advanteges-image {
+    width: 800;
+}
+
+.advanteges-white {
+    padding:0 90px;
+    width: 1200px;
+    color: #FFFFFF;
+    background-color: #68A2CA;
+}
+
+.advanteges-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advanteges-description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+
+.advanteges-description-white {
+    color: #FFFFFF;
+    background-color: #68A2CA;
+}
+
+
+.recommendation {
+    text-align: center;
+}
+
+.recommendation-list {
+    display:inline-flex;
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+}
+
+.recommendation-item {
+    width: 500px;
+    padding:0 75px;
+    margin: auto;
+
+}
+
+.recommendation-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 28px;
+    width: 270px;
+}
+
+.recommendation-description {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    width: 250px;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 240px;
+    text-align: center;
+    width: 720px;
+}
+
+.search-question {
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 720px;
+}
+
+.search-reason {
+    font-size: 22px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.search-button {
+    width: 575px;
+    background-color: #756257;
+    padding: 15px 200px;
+    margin: auto;
+}
+
+
+.subscribtion {
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+    justify-content: center;
+    background-image: url(../images/background/background-subscribe.jpg);
+    background-color:#000000;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+}
+
+.subscribe {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    width: 720px;
+    margin: 0 auto;
+}
+
+.subscribe-description {
+    font-size: 22px;
+    line-height: 26px;
+    width: 720px;
+    margin: 0 auto;
+}
+
+subscribtion-form {
+    color: #000000;
+}
+
+.subscribe-button {
+    background-color: #83B3D3;
+}
+
+.page-footer {
+    font-size: 40;
+    line-height: 40px;
+    font-weight: 400;
+    color: #000000;
+    background-color:#FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.page-footer a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social-list {
+    width: 120px;
+    margin-right: 30px;
+}
+
+.footer-phone {
+    width: 720px;
+    margin-right: 60px;
+}
+
+.footer-logo-html-academy {
+    margin-left: auto;
+    max-width: 120px;
+}
+
+.header-inner-title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.catalog-products {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 160px;
+    padding-right: 65x;
+    margin: 0;
+}
+
+.catalog-down-column {
+    width: 1057px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color:  #FFFFFF; 
+  }
+
+.control {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color:  #FFFFFF;
+    width: 106px;
+}
+
+.product-card-link {
+    text-decoration: none;
+  }
+
+.product-card-title {
+    font-weight:700;
+    color:#000000;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.product-card-type {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333
+}
+
+.product-card-price {
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333
+}
+
+.product-card-details,
+.want-here {
+    font-weight: 700;
+    background-color: #615048;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-card-favorite {
+    font-weight: 700;
+    background-color: #83B3D3;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+
+}
+
+.product-card-favorite-in {
+    font-weight: 700;
+    background-color: #6C9E42;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.rating {
+    background-color: #f2f2f2;
+    color: #333333;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagination-link {
+    color: #FFFFFF;
+    background-color: #68A2CA;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pagination-current {
+    color: #000000;
+    background-color: hsl(204 48% 67% / 0.12);
+}
+
+.pages {
+    color:  #333333;
+    font-size: 18px;
+    line-height: 23px;
+}
