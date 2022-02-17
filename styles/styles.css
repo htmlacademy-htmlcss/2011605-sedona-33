@@ -209,7 +209,7 @@ body {
 
 .advanteges-image {
     display: flex;
-    width: 800;
+    width: 800px;
 }
 
 .advanteges-white {
@@ -293,10 +293,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding-bottom: 93px;
-    padding-left: 312px;
-    padding-right: 312px;
     padding-top: 56px;
     text-align: center;
 }
@@ -308,8 +307,6 @@ body {
     text-align: center;
     width: 720px;
     margin: 0;
-    padding-left: 240px;
-    padding-right: 240px;
 }
 
 .search-reason {
@@ -319,15 +316,13 @@ body {
     margin: 0;
     padding-bottom: 56px;
     padding-top: 29px;
-    padding-left: 240px;
-    padding-right: 240px;
     width: 720px;
 }
 
 .search-button {
     width: 575px;
     background-color: #756257;
-    padding: 15px 200px;
+    padding: 15px;
     margin: auto;
 }
 
@@ -341,6 +336,8 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     padding-bottom: 93px;
+    justify-content: center;
+    align-items: center;
 }
 
 .subscribe {
@@ -355,13 +352,10 @@ body {
 .subscribe-description {
     font-size: 22px;
     line-height: 26px;
-    width: 720px;
     margin: 0;
     padding-top: 29px;
     padding-bottom: 46px;
-    padding-left: 240px;
-    padding-right: 240px;
-
+    justify-content: center;
 }
 
 subscribtion-form {
@@ -595,9 +589,10 @@ subscribtion-form {
 .product-show-more {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 620px;
     height: 60px;
-    padding: 22px 238px;
     margin-left: 291px;
     margin-top: 29px;
     margin-bottom: 30px;
@@ -614,6 +609,7 @@ subscribtion-form {
     display: flex;
     padding: 0;
     margin: 0;
+    margin-top: 29px;
     list-style-type: none;
 }
 
@@ -644,6 +640,7 @@ subscribtion-form {
 
 .pages {
     margin: 0;
+    margin: 29px;
     padding-right: 59px;
     padding-left: 303px;
     color:  #333333;
@@ -653,6 +650,7 @@ subscribtion-form {
 
 .select-page {
     display: block;
+    margin-top: 29px;
     box-sizing: border-box;
     margin-left: auto;
     width: 160px;
