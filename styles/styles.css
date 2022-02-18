@@ -45,6 +45,17 @@ body {
     background-color:#f2f2f2;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .page-header {
     background-color: #FFFFFF;
     color: #000000;
@@ -57,12 +68,17 @@ body {
 }
 
 .navigation-list {
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     width: 470px;
+    list-style-type: none;
 }
 
 .navigation-link {
+    display: block;
+    padding: 20px 17px;
     font-family: "PT Sans", sans-serif;
     line-height: 26px;
     font-size: 20px;
@@ -84,6 +100,10 @@ body {
     margin-left: 17px;
 }
 
+.navigation-list .navigation-user {
+    min-width: 42px;
+    min-height: 66px;
+}
 
 
 .button {
@@ -97,8 +117,9 @@ body {
     color: #FFFFFF;
 }
 
-.main-conteiner{
+.main-container{
     flex-grow: 1;
+    padding-top: 51px;
 }
 
 .main-index {
@@ -107,10 +128,10 @@ body {
     background-image: url(../images/background/index-background.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    
 }
 
 .main-inner {
+    padding-top: 35px;
     background-image: url(../images/background/catalog-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -118,14 +139,15 @@ body {
     color: #000000;
 }
 
-.page-conteiner {
-    margin: 0 auto;
+.page-container {
     width: 1200px;
+    margin: 0 auto;
 }
 
 .welcome-logo {
     display: block;
     margin: 0 auto;
+    margin-bottom: 82px;
 }
 
 .first-sreen {
@@ -141,6 +163,8 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-top: 63px;
+    margin-bottom: 31px;
 }
 
 .reasons {
@@ -149,70 +173,104 @@ body {
     color: #333333;
 }
 
-.advanteges-list {
+.index-columns {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    margin-top: 80px;
+}
+
+.advanteges {
+    width: 400px;
+}
+
+.advanteges-list {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-.advanteges-item {
-    width: 400px;
-    padding:0 75px;
-    
-}
-
-.advanteges-image {
-    width: 800;
-}
-
-.advanteges-white {
-    padding:0 90px;
-    width: 1200px;
-    color: #FFFFFF;
-    background-color: #68A2CA;
+    list-style-type: none;
 }
 
 .advanteges-title {
+    margin: 0;
+    padding-top: 97px;
+}
+
+.advanteges-item {
+    padding-bottom: 75px;
+}
+
+.number {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.advanteges-image {
+    display: flex;
+    width: 800px;
+}
+
+.advanteges-white {
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-bottom: 87px;
+    width: 400px;
+    color: #FFFFFF;
+    background-color: #68A2CA;
+    text-align: center;
+}
+
+.advanteges-title {
+    margin-top: 0;
+    margin-bottom: 29px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    width: 400px;
 }
 
 .advanteges-description {
+    margin: 0;
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    width: 250px;
+    text-align: center;
 }
 
 .advanteges-description-white {
     color: #FFFFFF;
     background-color: #68A2CA;
+    width: 220px;
 }
 
 
 .recommendation {
     text-align: center;
+    width: 400px;
 }
 
 .recommendation-list {
-    display:inline-flex;
     margin: 0;
     padding: 0;
-    width: 1200px;
+    text-align: center;
+    list-style-type: none;
 }
 
 .recommendation-item {
     width: 500px;
-    padding:0 75px;
+    padding-right: 75px;
+    padding-left: 75px;
     margin: auto;
 
 }
 
 .recommendation-title {
+    margin-top: 23px;
+    margin-bottom: 20px;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 24px;
@@ -227,14 +285,19 @@ body {
     width: 250px;
 }
 
+.recommendation-image {
+    display: block;
+}
+
 .search {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    padding: 0 240px;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 93px;
+    padding-top: 56px;
     text-align: center;
-    width: 720px;
 }
 
 .search-question {
@@ -243,33 +306,38 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: 720px;
+    margin: 0;
 }
 
 .search-reason {
     font-size: 22px;
     line-height: 26px;
     color: #333333;
+    margin: 0;
+    padding-bottom: 56px;
+    padding-top: 29px;
+    width: 720px;
 }
 
 .search-button {
     width: 575px;
     background-color: #756257;
-    padding: 15px 200px;
+    padding: 15px;
     margin: auto;
 }
 
 
 .subscribtion {
-    display: flex;
-    flex-direction: column;
-    padding: 0 200px;
-    justify-content: center;
+    display: block;
     background-image: url(../images/background/background-subscribe.jpg);
     background-color:#000000;
     color: #FFFFFF;
-    background-repeat: no-repeat;
     background-size: 100% auto;
+    background-repeat: no-repeat;
     text-align: center;
+    padding-bottom: 93px;
+    justify-content: center;
+    align-items: center;
 }
 
 .subscribe {
@@ -278,13 +346,16 @@ body {
     line-height: 36px;
     width: 720px;
     margin: 0 auto;
+    padding-top: 94px;
 }
 
 .subscribe-description {
     font-size: 22px;
     line-height: 26px;
-    width: 720px;
-    margin: 0 auto;
+    margin: 0;
+    padding-top: 29px;
+    padding-bottom: 46px;
+    justify-content: center;
 }
 
 subscribtion-form {
@@ -314,25 +385,45 @@ subscribtion-form {
 .page-footer-container {
     display: flex;
     width: 1200px;
+    height: 120px;
     margin: 0 auto;
 }
 
 .footer-social-list {
+    display: flex;
+    flex-wrap: wrap; 
     width: 120px;
-    margin-right: 30px;
+    list-style-type: none;
+    padding-top: 57px;
+    padding-bottom: 45px;
+    padding-left: 107px;
+    padding-right: 30px;
+}
+
+.footer-social-item {
+    width: 107px;
+    height: 25px;
 }
 
 .footer-phone {
     width: 720px;
     margin-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 30px;
 }
 
 .footer-logo-html-academy {
     margin-left: auto;
     max-width: 120px;
+    padding-top: 42px;
+    padding-bottom: 44px;
+    padding-left: 53px;
+    padding-right: 72px;
 }
 
 .header-inner-title {
+    margin: 0;
+    margin-bottom: 5px;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
@@ -340,12 +431,18 @@ subscribtion-form {
 }
 
 .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 45px;
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+    list-style-type: none;
 }
 
 .breadcrumbs-link {
+    margin: right 26px; ;
     color: inherit;
     text-decoration: none;
   }
@@ -369,11 +466,43 @@ subscribtion-form {
 }
 
 .catalog-filter-title {
+    margin: 0;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color:  #FFFFFF; 
   }
+.catalog-filter-item {
+    list-style-type: none;
+}
+
+.hotels-found {
+    margin: 0;
+    margin-top: 39px;
+    text-transform: uppercase;
+}
+
+.sorting-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    padding-left: 73px;
+    padding-right: 71px;
+}
+
+.select-control {
+    width: 287px;
+    height: 48px;
+    padding-left: 193px;
+    padding-right: 81px;
+    margin-top: 39px;
+
+}
+
+.sorting {
+    width: 48px;
+    height: 48px;
+}
 
 .control {
     font-weight: 400;
@@ -383,11 +512,18 @@ subscribtion-form {
     width: 106px;
 }
 
+.product-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .product-card-link {
     text-decoration: none;
   }
 
 .product-card-title {
+    margin: 0;
     font-weight:700;
     color:#000000;
     font-size: 24px;
@@ -450,9 +586,45 @@ subscribtion-form {
     text-transform: uppercase;
 }
 
+.product-show-more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 60px;
+    margin-left: 291px;
+    margin-top: 29px;
+    margin-bottom: 30px;
+    margin-right: 290px;
+}
+
+.pagination-container {
+    display: flex;
+    margin-top: 29px;
+    margin-bottom: 81px;
+}
+
+.pagination {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-top: 29px;
+    list-style-type: none;
+}
+
+.pagination-item:not(:last-child) {
+    margin-right: 8px;
+  }
+
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
+    width: 55px;
+    height: 55px;
+    padding: 19px 20px;
     color: #FFFFFF;
-    background-color: #68A2CA;
+    background-color: #83B3D3;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
@@ -467,7 +639,20 @@ subscribtion-form {
 }
 
 .pages {
+    margin: 0;
+    margin: 29px;
+    padding-right: 59px;
+    padding-left: 303px;
     color:  #333333;
     font-size: 18px;
     line-height: 23px;
+}
+
+.select-page {
+    display: block;
+    margin-top: 29px;
+    box-sizing: border-box;
+    margin-left: auto;
+    width: 160px;
+    height: 48px;
 }
