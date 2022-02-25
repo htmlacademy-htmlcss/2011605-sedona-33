@@ -161,15 +161,23 @@ body {
 }
 
 .tagline {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     margin-top: 63px;
     margin-bottom: 31px;
+    width: 720px;
+    margin: 0 auto;
 }
 
 .reasons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     font-size: 22px;
     line-height: 36px;
     color: #333333;
@@ -186,8 +194,8 @@ body {
 
 .advanteges-list {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 384px 384px 384px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -207,6 +215,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 
 .advanteges-white-1 {
     grid-column-start: 1;
@@ -512,6 +521,7 @@ subscribtion-form {
     margin-right: 60px;
     padding-top: 40px;
     padding-bottom: 30px;
+    font-size: 40px;
 }
 
 .footer-logo-html-academy {
