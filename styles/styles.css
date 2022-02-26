@@ -79,6 +79,7 @@ body {
 }
 
 .navigation-link {
+    position: relative;
     display: block;
     padding: 20px 17px;
     font-family: "PT Sans", sans-serif;
@@ -89,6 +90,51 @@ body {
     background-color: #FFFFFF;
     text-align: center;
     text-decoration: none;
+}
+
+.navigation-link:hover {
+    color: #615048;
+}
+
+.navigation-link:active {
+    color: #f2f2f2;
+}
+
+.want-here:focus {
+    box-shadow: inset 0 0 0 4px #83B3D3;
+    outline: none;
+}
+
+.navigation-icon {
+    position:absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.want-here {
+    margin-left: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #756257;
+}
+
+.want-here:hover {
+    color:#FFFFFF;
+    background-color: #615048;
+}
+
+.want-here:active {
+    color: #f2f2f2;
+}
+
+.want-here:focus {
+    box-shadow: inset 0 0 0 4px #83B3D3;
+    outline: none;
 }
 
 .navigation-logo {
@@ -109,19 +155,32 @@ body {
 
 
 .button {
+    display: inline-block;
     font-family: inherit;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #68A2CA;
+    background-color: #83B3D3;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
 }
+
+.button:hover {
+    color:#FFFFFF;
+    background-color: #615048;
+}
+
+.button:active {
+    color: #f2f2f2;
+}
+
 
 .main-container{
     flex-grow: 1;
-    padding-top: 51px;
 }
 
 .main-index {
@@ -133,10 +192,9 @@ body {
     padding-top: 35px;
     background-color: #FFFFFF;
     color: #000000;
-    background-image: url(../images/background/catalog-background.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
 }
+
+
 
 .first-screen {
     margin: 0 auto;
@@ -145,6 +203,15 @@ body {
     background-image: url(../images/background/index-background.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
+}
+
+.catalog-container {
+    background-image: url(../images/background/catalog-background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0 auto;
 }
 
 .page-container {
@@ -158,6 +225,14 @@ body {
     margin: 0 auto;
     padding-top: 51px;
     padding-bottom: 82px;
+}
+
+.decor {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
 }
 
 .tagline {
@@ -437,6 +512,21 @@ body {
     margin: auto;
 }
 
+.search-button:hover {
+    color:#FFFFFF;
+    background-color: #615048;
+}
+
+.search-button:active {
+    color: #f2f2f2;
+}
+
+.search-button:focus {
+    box-shadow: inset 0 0 0 4px #68A2CA;
+    outline: none;
+}
+
+
 
 .subscribtion {
     display: block;
@@ -474,7 +564,25 @@ subscribtion-form {
 }
 
 .subscribe-button {
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
     background-color: #83B3D3;
+}
+
+
+.subscribe-button:hover {
+    color:#FFFFFF;
+    background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+    color: #f2f2f2;
+}
+
+.subscribe-button:focus {
+    box-shadow: inset 0 0 0 4px #615048;
+    outline: none;
 }
 
 .page-footer {
@@ -503,7 +611,6 @@ subscribtion-form {
 .footer-social-list {
     display: flex;
     flex-wrap: wrap; 
-    width: 120px;
     list-style-type: none;
     padding-top: 57px;
     padding-bottom: 45px;
@@ -511,9 +618,58 @@ subscribtion-form {
     padding-right: 30px;
 }
 
+.social-link {
+    display: block;
+    height: 20px;
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.social-link:hover {
+    color: #68A2CA;
+}
+
+.social-link:focus {
+    box-shadow: inset 0 0 0 4px #83B3D3;
+    outline: none;
+}
+
+.social-link:active {
+   color: hsl(204 48% 67% / 0.2)
+}
+
+.footer-social-twitter {
+    background-image: url(../images/social-networks/twitter.svg);
+    background-size: 18px 15px;
+}
+
+.footer-social-fb{
+    background-image: url(../images/social-networks/facebook.svg);
+    background-size: 10px 18px;
+}
+
+.footer-social-youtube{
+    background-image: url(../images/social-networks/youtube.svg);
+    background-size: 20px 16px;
+}
+
 .footer-social-item {
     width: 107px;
     height: 25px;
+}
+
+.footer-info:hover {
+    color: #756257;
+}
+
+.footer-info:active {
+    color:#e5e5e5
+}
+
+.footer-info:focus {
+    box-shadow: inset 0 0 0 4px #83B3D3;
+    outline: none;
 }
 
 .footer-phone {
@@ -523,6 +679,7 @@ subscribtion-form {
     padding-bottom: 30px;
     font-size: 40px;
 }
+
 
 .footer-logo-html-academy {
     margin-left: auto;
@@ -542,6 +699,7 @@ subscribtion-form {
     color: #FFFFFF;
 }
 
+
 .breadcrumbs {
     display: flex;
     margin: 0;
@@ -553,15 +711,19 @@ subscribtion-form {
     list-style-type: none;
 }
 
+.breadcrumbs-home {
+    margin-right: 11px;
+}
+
+.breadcrumbs-arrow {
+    margin-right: 10px;
+}
+
 .breadcrumbs-link {
     margin: right 26px; ;
     color: inherit;
     text-decoration: none;
   }
-
-.filter-container {
-    
-}
 
 .catalog-products {
     display: flex;
@@ -603,11 +765,14 @@ subscribtion-form {
 
 .sorting-container {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 56px;
     padding-left: 73px;
     padding-right: 71px;
 }
+
+.sorting-type {
+    margin-right: auto;
+  }
 
 .select-control {
     width: 287px;
@@ -618,9 +783,14 @@ subscribtion-form {
     margin-top: 53px;
 }
 
-.sorting {
+.card-grid-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 48px;
     height: 48px;
+    box-sizing: border-box;
+    
 }
 
 .control {
@@ -639,9 +809,11 @@ subscribtion-form {
     padding: 0;
     gap: 18px;
     margin-bottom: 34px;
+    margin-top: 10px;
 }
 
 .product-card {
+    position: relative;
     display: grid;
     grid-template-rows: 206px min-content min-content min-content 37px;
     grid-template-columns: 135px 160px;
@@ -662,6 +834,7 @@ subscribtion-form {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding-top: 20px;
 }
 
 .product-card-title {
@@ -674,6 +847,7 @@ subscribtion-form {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    padding-top: 16px;
 }
 
 .product-card-type {
@@ -700,7 +874,7 @@ subscribtion-form {
 .product-card-details,
 .want-here {
     font-weight: 700;
-    background-color: #615048;
+    background-color: #756257;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 21px;
@@ -715,6 +889,19 @@ subscribtion-form {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+.product-card-details:hover {
+    background-color: #615048;
+}
+
+.product-card-details:active {
+    color: #e5e5e5;
+}
+
+.product-card-details:focus {
+    box-shadow: inset 0 0 0 4px #68A2CA;
+    outline: none;
 }
 
 .product-card-favorite {
@@ -734,9 +921,23 @@ subscribtion-form {
 
 }
 
+.product-card-favorite:hover {
+    background-color: #68A2CA;
+}
+
+.product-card-favorite:active {
+    color: #e5e5e5;
+}
+
+.product-card-favorite:focus {
+    box-shadow: inset 0 0 0 4px #615048;
+    outline: none;
+}
+
+
 .product-card-favorite-in {
     font-weight: 700;
-    background-color: #6C9E42;
+    background-color: #7DB54F;
     color:#FFFFFF;
     text-transform: uppercase;
     text-decoration: none;
@@ -748,6 +949,25 @@ subscribtion-form {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+.product-card-favorite-in:hover {
+    background-color: #6C9E42;
+}
+
+.product-card-favorite-in:active {
+    color: #e5e5e5;
+}
+
+.product-card-favorite-in:focus {
+    box-shadow: inset 0 0 0 4px #615048;
+    outline: none;
+}
+
+.stars-rating{
+    position: absolute;
+    bottom: 0;
+    
 }
 
 .rating {
@@ -775,6 +995,21 @@ subscribtion-form {
     margin-top: 29px;
     margin-bottom: 30px;
     margin-right: 290px;
+    padding-right: 26px;
+}
+
+.product-show-more:hover {
+    color:#FFFFFF;
+    background-color: #68A2CA;
+}
+
+.product-show-more:active {
+    color: #f2f2f2;
+}
+
+.product-show-more:focus {
+    box-shadow: inset 0 0 0 4px #615048;
+    outline: none;
 }
 
 .pagination-container {
@@ -809,6 +1044,19 @@ subscribtion-form {
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-link:active {
+    color: #e5e5e5;
+}
+
+.pagination-link:focus {
+    box-shadow: inset 0 0 0 4px #615048;
+    outline: none;
 }
 
 .pagination-current {
