@@ -101,7 +101,7 @@ body {
 }
 
 .want-here:focus {
-    box-shadow: inset 0 0 0 4px #83B3D3;
+    box-shadow: inset 0 0 0 2px #83B3D3;
     outline: none;
 }
 
@@ -146,6 +146,8 @@ body {
 .navigation-user {
     max-width: 280px;
     margin-left: 17px;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 .navigation-list .navigation-user {
@@ -167,6 +169,17 @@ body {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
+    border-radius: 4px;
+    height: max-content;
+}
+
+.button-reset {
+    background-color: transparent;
+}
+
+.button-container {
+    display: flex;
+    flex-direction:column;
 }
 
 .button:hover {
@@ -298,7 +311,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 2;
     color: #FFFFFF;
-    background-color: #68A2CA;
+    background-color: #83B3D3;
     text-align: center;
     width: 400px;
 }
@@ -360,7 +373,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     color: #FFFFFF;
-    background-color: #68A2CA;
+    background-color: #83B3D3;
     text-align: center;
     width: 400px;
 }
@@ -585,6 +598,30 @@ subscribtion-form {
     outline: none;
 }
 
+.field {
+    margin: 0;
+    padding: 19px 19px;
+    font: inherit;
+    font-weight: 700;
+    background-color: #f2f2f2;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.field:hover {
+    background-color: #e5e5e5;
+}
+
+.field:focus {
+    outline: 2px solid #83B3D3;
+}
+
+.field:invalid {
+    box-shadow: none;
+  }
+
+
+
 .page-footer {
     font-size: 40;
     line-height: 40px;
@@ -610,12 +647,11 @@ subscribtion-form {
 
 .footer-social-list {
     display: flex;
-    flex-wrap: wrap; 
     list-style-type: none;
-    padding-top: 57px;
-    padding-bottom: 45px;
-    padding-left: 107px;
-    padding-right: 30px;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 49px;
+    margin-bottom: 59px;
 }
 
 .social-link {
@@ -626,38 +662,33 @@ subscribtion-form {
     background-position: center;
 }
 
-.social-link:hover {
+.footer-social-item {
+    width: 25px;
+    height: 25px;
+    margin-right: 30px;
+  }
+
+.footer-social-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+.social-network {
+    width: 20px;
+}
+
+.social-network:hover {
     color: #68A2CA;
 }
 
-.social-link:focus {
+.social-network:focus {
     box-shadow: inset 0 0 0 4px #83B3D3;
     outline: none;
 }
 
-.social-link:active {
+.social-network:active {
    color: hsl(204 48% 67% / 0.2)
 }
 
-.footer-social-twitter {
-    background-image: url(../images/social-networks/twitter.svg);
-    background-size: 18px 15px;
-}
-
-.footer-social-fb{
-    background-image: url(../images/social-networks/facebook.svg);
-    background-size: 10px 18px;
-}
-
-.footer-social-youtube{
-    background-image: url(../images/social-networks/youtube.svg);
-    background-size: 20px 16px;
-}
-
-.footer-social-item {
-    width: 107px;
-    height: 25px;
-}
 
 .footer-info:hover {
     color: #756257;
@@ -688,6 +719,12 @@ subscribtion-form {
     padding-bottom: 44px;
     padding-left: 53px;
     padding-right: 72px;
+}
+
+.header-inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 72px
 }
 
 .header-inner-title {
@@ -730,6 +767,13 @@ subscribtion-form {
     flex-direction: column;
 }
 
+.filter {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 72px;
+}
+
 .catalog-filter {
     display: flex;
     flex-direction: row;
@@ -751,7 +795,22 @@ subscribtion-form {
     font-size: 20px;
     line-height: 26px;
     color:  #FFFFFF; 
+    width: 287px;
   }
+
+.range-scale {
+    position: relative;
+    background-color: #e5e5e5;
+    height: 4px;
+    margin-top: 32px;
+    border-radius: 4px;
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #FFFFFF;
+}
 
 .catalog-filter-item {
     list-style-type: none;
@@ -768,11 +827,10 @@ subscribtion-form {
     margin-bottom: 56px;
     padding-left: 73px;
     padding-right: 71px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.sorting-type {
-    margin-right: auto;
-  }
 
 .select-control {
     width: 287px;
@@ -790,7 +848,9 @@ subscribtion-form {
     width: 48px;
     height: 48px;
     box-sizing: border-box;
-    
+    border-color: #f2f2f2;
+    border-radius: 4px;
+    border-width: 48px;
 }
 
 .control {
@@ -813,11 +873,12 @@ subscribtion-form {
 }
 
 .product-card {
-    position: relative;
     display: grid;
     grid-template-rows: 206px min-content min-content min-content 37px;
     grid-template-columns: 135px 160px;
     gap: 16px;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card-link {
@@ -881,6 +942,7 @@ subscribtion-form {
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 4px;
 }
 
 .product-card-details {
@@ -918,6 +980,7 @@ subscribtion-form {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    border-radius: 4px;
 
 }
 
@@ -949,6 +1012,7 @@ subscribtion-form {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    border-radius: 4px;
 }
 
 .product-card-favorite-in:hover {
@@ -964,10 +1028,11 @@ subscribtion-form {
     outline: none;
 }
 
-.stars-rating{
-    position: absolute;
-    bottom: 0;
-    
+.stars-rating {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
 .rating {
@@ -982,6 +1047,7 @@ subscribtion-form {
     grid-row-start: 5;
     grid-row-end: 6;
     padding: 10px;
+    border-radius: 4px;
 }
 
 .product-show-more {
@@ -996,6 +1062,7 @@ subscribtion-form {
     margin-bottom: 30px;
     margin-right: 290px;
     padding-right: 26px;
+    border-radius: 4px;
 }
 
 .product-show-more:hover {
@@ -1044,6 +1111,7 @@ subscribtion-form {
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .pagination-link:hover {
