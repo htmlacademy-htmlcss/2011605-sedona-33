@@ -291,12 +291,6 @@ body {
     width: 1200px;
 }
 
-.advanteges-title {
-    margin: 0;
-    padding-top: 97px;
-    width: 400px;
-}
-
 
 .number {
     margin: 0;
@@ -337,7 +331,9 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    width: 400px;
+    margin: 0 auto;
+    padding-top: 97px;
+    width: 175px;
 }
 
 .advanteges-description {
@@ -810,6 +806,57 @@ subscribtion-form {
     position: absolute;
     height: 4px;
     background-color: #FFFFFF;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.toggle-min {
+    top:-10px;
+    left: 0px;
+}
+
+.toggle-max {
+    top: -10px;
+    right: 0px;
+}
+.range-toggle:focus {
+    border: 3px solid #83B3D3;
+}
+  
+.range-toggle:active {
+    border: 2px solid #83B3D3;
+ }
+
+.range-wrapper-inputs {
+    display: flex;
+    justify-content: start;
+}
+
+.range-input {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 19px 14px;
+    font: inherit;
+}
+  
+.catalog-filter-label {
+    display: flex;
+    margin-right: 5px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .catalog-filter-item {
