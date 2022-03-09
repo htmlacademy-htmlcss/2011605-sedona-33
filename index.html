@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="page-container">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -48,18 +49,20 @@
     </nav>
   </header>
   <main class="main-container main-index">
-    <div class="first-screen">
-      <h1 class="visually-hidden">Седона</h1>
-      <img class="welcome-logo" src="images/logo/logo-welcome-to-sedona.svg" width="458" height="352"
-        alt="Welcome to Sedona">
-      <img class="decor" src="images/background/decor.svg" width="1200px" height="57px" alt="Декоративная часть">
-    </div>
-    <p>
-      <b class="tagline">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-    </p>
-    <span class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-    </span>
-    <div class="page-container">
+    
+      <div class="first-screen">
+        <h1 class="visually-hidden">Седона</h1>   
+        <img class="welcome-logo" src="images/logo/logo-welcome-to-sedona.svg" width="458" height="352"
+          alt="Welcome to Sedona">
+          <svg class="decor" aria-hidden="true" focusable="false" width="1200" height="57" viewBox="0 0 1200 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 57V0L250 24V0L600 57L950 0V24L1200 0V57H0Z" fill="white"/>
+            </svg>        
+      </div>
+      <p>
+        <b class="tagline">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+      </p>
+      <span class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+      </span>
       <div class="index-columns">
         <section class="advanteges">
           <h2 class="visually-hidden">Преимущества</h2>
@@ -144,7 +147,7 @@
           </p>
         </form>
       </section>
-    </div>
+    
   </main>
   <footer class="page-footer">
     <div class="page-footer-container">
@@ -169,8 +172,8 @@
           </li>
           <li class="footer-social-item">
             <a class="social-link footer-social-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <svg class="social-network" aria-hidden="true" focusable="false" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
-                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" fill="#83B3D3"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs>
+              <svg class="social-network" aria-hidden="true" focusable="false" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z" fill="#83B3D3"/><clipPath id="a"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs>
               </svg>
               <span class="visually-hidden">Youtube</span>
             </a>
@@ -190,6 +193,7 @@
       </section>
     </div>
   </footer>
+</div>
 </body>
 
 </html>
